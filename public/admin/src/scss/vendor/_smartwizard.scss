@@ -1,0 +1,17 @@
+.sw-main {
+  background-color: $card-bg;
+  overflow: hidden;
+  box-shadow: $box-shadow-sm;
+  border: 0;
+}
+.sw-btn-group {
+  margin-right: 0 !important;
+}
+@include media-breakpoint-down(sm) {
+  .sw-theme-arrows > ul.step-anchor > li > a {
+    padding-right: 15px !important;
+  }
+  .sw-theme-arrows > ul.step-anchor {
+    background: #f5f5f5 !important;
+  }
+}

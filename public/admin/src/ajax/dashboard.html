@@ -1,0 +1,11 @@
+      @@include('../html/content/index.html')
+
+<script>
+  var plugins = [
+    '../../plugins/chart.js/Chart.min.js',
+    '../../plugins/jquery-sparkline/jquery.sparkline.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/index.js')
+  }).then(() => App.stopLoading())
+</script>

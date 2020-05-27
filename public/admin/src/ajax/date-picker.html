@@ -1,0 +1,15 @@
+      @@include('../html/content/date-picker.html')
+
+<script>
+  var plugins = [
+    '../../plugins/flatpickr/flatpickr.min.css',
+    '../../plugins/flatpickr/plugins/monthSelect/style.css',
+    '../../plugins/clockpicker/bootstrap-clockpicker.min.css',
+    '../../plugins/flatpickr/flatpickr.min.js',
+    '../../plugins/flatpickr/plugins/monthSelect/index.js',
+    '../../plugins/clockpicker/bootstrap-clockpicker.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/date-picker.js')
+  }).then(() => App.stopLoading())
+</script>

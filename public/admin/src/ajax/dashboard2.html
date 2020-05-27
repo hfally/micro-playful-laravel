@@ -1,0 +1,14 @@
+      @@include('../html/content/index2.html')
+
+<script>
+  var plugins = [
+    '../../plugins/chart.js/Chart.min.js',
+    '../../plugins/jquery-sparkline/jquery.sparkline.min.js',
+    '../../plugins/jqvmap/jqvmap.min.css',
+    '../../plugins/jqvmap/jquery.vmap.min.js',
+    '../../plugins/jqvmap/maps/jquery.vmap.usa.js',
+  ]
+  App.loadPlugins(plugins, null, true).then(() => {
+    @@include('../html/content/index2.js')
+  }).then(() => App.stopLoading())
+</script>

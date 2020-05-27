@@ -1,0 +1,7 @@
+      @@include('../html/content/popovers.html')
+
+<script>
+  App.loadPlugins(null, null).then(() => {
+    @@include('../html/content/popovers.js')
+  }).then(() => App.stopLoading())
+</script>

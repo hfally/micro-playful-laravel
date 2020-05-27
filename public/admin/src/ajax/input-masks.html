@@ -1,0 +1,10 @@
+      @@include('../html/content/input-masks.html')
+
+<script>
+  var plugins = [
+    '../../plugins/inputmask/jquery.inputmask.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/input-masks.js')
+  }).then(() => App.stopLoading())
+</script>

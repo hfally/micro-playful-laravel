@@ -1,0 +1,11 @@
+      @@include('../html/content/carousel.html')
+
+<script>
+  var plugins = [
+    '../../plugins/swiper/swiper.min.css',
+    '../../plugins/swiper/swiper.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/carousel.js')
+  }).then(() => App.stopLoading())
+</script>

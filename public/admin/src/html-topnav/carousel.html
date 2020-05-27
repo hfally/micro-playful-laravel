@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="msapplication-tap-highlight" content="no"/>
+  @@include('../html/include/font-icon.html')
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../plugins/swiper/swiper.min.css">
+  @@include('../html/include/main-css.html')
+  <title>Mimity Admin</title>
+</head>
+
+<body class="sticky-navbar">
+
+  @@include('../html/include/sidebar.html', {
+    "menu": "ui",
+    "sub": "carousel"
+  })
+
+  <!-- Main -->
+  <div class="main">
+
+    @@include('./include/header.html')
+
+    @@include('./include/navbar.html', {
+      "menu": "ui",
+      "sub": "carousel"
+    })
+
+    <!-- Main body -->
+    <div class="main-body">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="main-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="javascript:void(0)">UI Elements</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Carousel</li>
+        </ol>
+      </nav>
+      <!-- /Breadcrumb -->
+
+      @@include('../html/content/carousel.html')
+
+    </div>
+    <!-- /Main body -->
+
+  </div>
+  <!-- /Main -->
+
+  @@include('../html/include/modal-search.html')
+
+  @@include('../html/include/main-js.html')
+
+  <!-- Plugins -->
+  <script src="../../plugins/swiper/swiper.min.js"></script>
+  <script>
+    @@include('../html/content/carousel.js')
+  </script>
+
+</body>
+
+</html>

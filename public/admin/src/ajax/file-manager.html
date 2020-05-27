@@ -1,0 +1,13 @@
+      <style>
+        .main-body {
+          padding: 0;
+        }
+      </style>
+
+      @@include('../html/content/file-manager.html')
+
+<script>
+  App.loadPlugins(null, null).then(() => {
+    @@include('../html/content/file-manager.js')
+  }).then(() => App.stopLoading())
+</script>

@@ -1,0 +1,16 @@
+      <style>
+        .main-body {
+          padding: 0;
+        }
+      </style>
+
+      @@include('../html/content/chat.html')
+
+<script>
+  var plugins = [
+    '../../plugins/autosize/autosize.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/chat.js')
+  }).then(() => App.stopLoading())
+</script>

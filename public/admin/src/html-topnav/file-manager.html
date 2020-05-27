@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="msapplication-tap-highlight" content="no"/>
+  @@include('../html/include/font-icon.html')
+  <!-- Plugins -->
+  <!-- CSS plugins goes here -->
+  @@include('../html/include/main-css.html')
+  <title>Mimity Admin</title>
+</head>
+
+<body class="sticky-navbar">
+
+  @@include('../html/include/sidebar.html', {
+    "menu": "file-manager",
+    "sub": ""
+  })
+
+  <!-- Main -->
+  <div class="main">
+
+    @@include('./include/header.html')
+
+    @@include('./include/navbar.html', {
+      "menu": "file-manager",
+      "sub": ""
+    })
+
+    <!-- Main body -->
+    <div class="main-body p-0">
+
+      @@include('../html/content/file-manager.html')
+
+    </div>
+    <!-- /Main body -->
+
+  </div>
+  <!-- /Main -->
+
+  @@include('../html/include/modal-search.html')
+
+  @@include('../html/include/main-js.html')
+
+  <!-- Plugins -->
+  <!-- JS plugins goes here -->
+  <script>
+    @@include('../html/content/file-manager.js')
+  </script>
+
+</body>
+
+</html>

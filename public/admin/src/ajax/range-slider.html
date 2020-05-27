@@ -1,0 +1,16 @@
+  <style>
+    .slider-example {
+      max-width: 300px;
+    }
+  </style>
+      @@include('../html/content/range-slider.html')
+
+<script>
+  var plugins = [
+    '../../plugins/nouislider/nouislider.min.css',
+    '../../plugins/nouislider/nouislider.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/range-slider.js')
+  }).then(() => App.stopLoading())
+</script>

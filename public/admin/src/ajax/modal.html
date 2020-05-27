@@ -1,0 +1,10 @@
+      @@include('../html/content/modal.html')
+
+<script>
+  var plugins = [
+    '../../plugins/bootbox/bootbox.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/modal.js')
+  }).then(() => App.stopLoading())
+</script>

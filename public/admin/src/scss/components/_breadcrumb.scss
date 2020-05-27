@@ -1,0 +1,36 @@
+.breadcrumb {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  .breadcrumb-item {
+    display: inline;
+    > a {
+      color: lighten($breadcrumb-active-color, 10%);
+      &:hover {
+        text-decoration: none;
+        color: $breadcrumb-active-color;
+      }
+    }
+  }
+}
+
+.breadcrumb-style1 .breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+.breadcrumb-style2 .breadcrumb-item + .breadcrumb-item::before {
+  content: '-->';
+}
+.breadcrumb-style3 .breadcrumb-item + .breadcrumb-item::before {
+  content: '\27A4';
+}
+
+.main-breadcrumb {
+  margin: (-$main-body-padding) (-$main-body-padding) $main-body-padding;
+  .breadcrumb {
+    margin-bottom: 0;
+    @if $enable-rounded {
+      border-radius: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+      @@include('../html/content/form-wizard.html')
+
+<script>
+  var plugins = [
+    '../../plugins/smartwizard/css/smart_wizard.min.css',
+    '../../plugins/smartwizard/css/smart_wizard_theme_arrows.min.css',
+    '../../plugins/smartwizard/js/jquery.smartWizard.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/form-wizard.js')
+  }).then(() => App.stopLoading())
+</script>

@@ -1,0 +1,13 @@
+      @@include('../html/content/images.html')
+
+<script>
+  var plugins = [
+    '../../plugins/photoswipe/photoswipe.min.css',
+    '../../plugins/photoswipe/photoswipe-default-skin/default-skin.min.css',
+    '../../plugins/photoswipe/photoswipe.min.js',
+    '../../plugins/photoswipe/photoswipe-ui-default.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/images.js')
+  }).then(() => App.stopLoading())
+</script>

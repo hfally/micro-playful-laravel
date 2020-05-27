@@ -1,0 +1,7 @@
+      @@include('../html/content/tooltips.html')
+
+<script>
+  App.loadPlugins(null, null).then(() => {
+    @@include('../html/content/tooltips.js')
+  }).then(() => App.stopLoading())
+</script>

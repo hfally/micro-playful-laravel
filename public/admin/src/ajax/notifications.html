@@ -1,0 +1,11 @@
+      @@include('../html/content/notifications.html')
+
+<script>
+  var plugins = [
+    '../../plugins/noty/noty.min.css',
+    '../../plugins/noty/noty.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/notifications.js')
+  }).then(() => App.stopLoading())
+</script>

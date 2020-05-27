@@ -1,0 +1,10 @@
+      @@include('../html/content/chart-line.html')
+
+<script>
+  var plugins = [
+    '../../plugins/chart.js/Chart.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/chart-line.js')
+  }).then(() => App.stopLoading())
+</script>

@@ -1,0 +1,7 @@
+      @@include('../html/content/timeline.html')
+
+<script>
+  App.loadPlugins(null, null).then(() => {
+    @@include('../html/content/timeline.js')
+  }).then(() => App.stopLoading())
+</script>

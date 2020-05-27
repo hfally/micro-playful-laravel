@@ -1,0 +1,10 @@
+      @@include('../html/content/sparkline.html')
+
+<script>
+  var plugins = [
+    '../../plugins/jquery-sparkline/jquery.sparkline.min.js',
+  ]
+  App.loadPlugins(plugins, null).then(() => {
+    @@include('../html/content/sparkline.js')
+  }).then(() => App.stopLoading())
+</script>

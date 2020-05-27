@@ -1,0 +1,12 @@
+      <style>
+        .card-example {
+          max-width: 400px;
+        }
+      </style>
+      @@include('../html/content/cards.html')
+
+<script>
+  App.loadPlugins(null, null).then(() => {
+    @@include('../html/content/cards.js')
+  }).then(() => App.stopLoading())
+</script>
