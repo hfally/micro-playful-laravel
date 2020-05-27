@@ -31,7 +31,7 @@ if (isset($_POST['savechange']) && $_POST['savechange'] == "savechange") {
         } elseif ($passport != "") {
 
 
-            $uploaddir = base_dir('admin/banner/');
+            $uploaddir = 'https://webinar.lawpavilion.com/admin/banner/';
             $uploadfile = $uploaddir . basename($_FILES['image_file']['name']);
             if ($_FILES['image_file']['error'] === UPLOAD_ERR_OK) {
                 $new_file_name = strtolower($file_name);
@@ -111,7 +111,7 @@ if (isset($_POST['submit']) && $_POST['submit'] == "submit") {
                 } elseif ($passport != "") {
 
 
-                    $uploaddir = 'banner/';
+            $uploaddir = 'https://webinar.lawpavilion.com/admin/banner/';
                     $uploadfile = $uploaddir . basename($_FILES['image_file']['name']);
                     if ($_FILES['image_file']['error'] === UPLOAD_ERR_OK) {
                         $new_file_name = strtolower($file_name);
