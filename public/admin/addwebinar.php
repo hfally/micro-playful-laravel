@@ -62,7 +62,7 @@ $result_insert=mysqli_query($conn,$sql_speakder);
 } elseif($passport!=""){
 
 
- $uploaddir = 'banner/'; 
+ $uploaddir = base_dir('admin/banner/');
 $uploadfile = $uploaddir . basename($_FILES['image_file']['name']);
 if ($_FILES['image_file']['error'] === UPLOAD_ERR_OK) {
  $new_file_name = strtolower($file_name);
