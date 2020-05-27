@@ -1,4 +1,3 @@
-
 before_script:
   - apt-get update -qq
   - apt-get install -qq git
@@ -15,6 +14,6 @@ deploy_production:
     name: prodution
     url: webinar.lawpavilion.com
   script:
-    - ssh root@webinar.lawpavilion.com "cd /var/www/webinar_production && git checkout master && git pull origin master"
+    - ssh root@webinar.lawpavilion.com "cd /var/www/webinar-production && git checkout master && git pull origin master"
   only:
     - master
