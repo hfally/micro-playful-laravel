@@ -1,0 +1,41 @@
+{
+  "name": "lawpavilion/ai-case-extraction",
+  "description": "Extract cases and laws from a body of text.",
+  "type": "project",
+  "license": "LawPavilion 2020",
+  "authors": [
+    {
+      "name": "Tofunmi Falade",
+      "email": "tofunmi.falade@lawpavilion.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^7.1@dev",
+    "spatie/pdf-to-text": "dev-master",
+    "ext-http": "*",
+    "ext-fileinfo": "*"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "config/globals.php",
+      "helpers.php",
+      "env.php",
+      "config/app.php",
+      "router.php",
+      "bootstrap/app.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "require-dev": {
+    "symfony/var-dumper": "^5.2@dev"
+  }
+}
